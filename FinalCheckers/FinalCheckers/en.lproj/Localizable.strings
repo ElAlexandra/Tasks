@@ -1,0 +1,24 @@
+/* 
+  localized.strings
+  DZlesson15
+
+ Created by Александра  Значёнок on 12.11.21.
+  
+*/
+//"hello_launchScreen_text" = "Hello!";
+"go_button_text" = "Let's Play!";
+"results_button_text" = "Results";
+"settings_button_text" = "Settings";
+"back_button_text" = "back";
+"choose_checkers_style" = "Choose checkers style";
+"choose_the_background" = "Сhoose the background";
+"about_the_game" = "About the game";
+"titleLabel_style_vc" = "Сhoose checkers style!";
+"selectButtonLabel_text_xib" = "Select";
+"history_label_text" = "History of Checkers or Draughts";
+"text_history_label_text" = "Checkers is an easy to learn board game that many people played when they were children. The game has been around for longer than you might think. There have been some changes to the rules as time went on. Checkers is also called English draughts (pronounced “drafts”), American checkers, or straight checkers. There is also a French version called Les Dames. The version you played as a child depends upon where you lived or what country your ancestors grew up in. An archeological dig in the Iraqi city of Ur unearthed a game that looks very similar to checkers. Carbon dating puts the game around 3,000 B.C.E. It is impossible to know exactly what the rules were for this early version of the game. Egyptian pharaohs played a game called Alquerque on a five-by-five board. The ancient Greeks also had a version of checkers that goes back as far as 1600 B.C.E. It was mentioned by both Homer and Plato in their works.The French version of checkers was originally called Fierges and was developed around 1100. The rules did not require players to capture the opponent’s game pieces (but they could choose to do so if there was an opportunity). The game was played on a 64-square chessboard. Around 1535, the rules were changed to force players to capture the “enemy” pieces. The new version was called Jeu Force. After this rule change, the previous version of the game was called Le Jeu de Dames or Le Jeu Plaisant de Dames. The less combative version of the game was considered to be for women to play. Later, after additional rule changes, the name of the game changed to Polish Draughts or Polish Checkers. The new version was developed in France (not Poland).";
+"good_luck_label_text" = "Good Luck!";
+"play_button_text" = "Play";
+"title_label_text" = "Enter your names, please";
+"button_stop_text" = "Stop";
+"winner_label_text" = "Stop";

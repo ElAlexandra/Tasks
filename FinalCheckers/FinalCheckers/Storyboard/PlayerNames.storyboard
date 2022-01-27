@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vfb-OJ-bcj">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Player Names View Controller-->
+        <scene sceneID="ele-MA-Ch8">
+            <objects>
+                <viewController id="vfb-OJ-bcj" customClass="PlayerNamesViewController" customModule="FinalCheckers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="152-Ew-9AF">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LgP-8s-ax0">
+                                <rect key="frame" x="0.0" y="342" width="390" height="160"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k6v-dp-aLy">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="160"/>
+                                        <subviews>
+                                            <textField opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 1" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Reh-7T-x4F">
+                                                <rect key="frame" x="8" y="8" width="370" height="40"/>
+                                                <color key="backgroundColor" red="0.92463356256484985" green="0.7945442795753479" blue="0.94684535264968872" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="370" id="RQx-ZB-jjN"/>
+                                                    <constraint firstAttribute="height" constant="40" id="n5p-J4-dGQ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert" returnKeyType="next"/>
+                                            </textField>
+                                            <textField opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 2" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="syW-z9-S05">
+                                                <rect key="frame" x="8" y="112" width="370" height="40"/>
+                                                <color key="backgroundColor" red="0.67535567283630371" green="0.92886441946029663" blue="0.78938090801239014" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="370" id="7qf-Yn-7Ui"/>
+                                                    <constraint firstAttribute="height" constant="40" id="tl7-JL-QiE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert" returnKeyType="done"/>
+                                            </textField>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="VS" translatesAutoresizingMaskIntoConstraints="NO" id="qYh-gC-yaL">
+                                                <rect key="frame" x="156" y="49" width="79" height="61"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="79" id="AbC-7C-jdW"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="syW-z9-S05" secondAttribute="bottom" constant="8" id="9uU-m0-Mz6"/>
+                                            <constraint firstItem="qYh-gC-yaL" firstAttribute="centerY" secondItem="k6v-dp-aLy" secondAttribute="centerY" id="Je9-J5-DIK"/>
+                                            <constraint firstItem="Reh-7T-x4F" firstAttribute="leading" secondItem="syW-z9-S05" secondAttribute="leading" id="Pzs-4b-wVB"/>
+                                            <constraint firstItem="Reh-7T-x4F" firstAttribute="leading" secondItem="k6v-dp-aLy" secondAttribute="leadingMargin" id="V4S-Sf-F96"/>
+                                            <constraint firstAttribute="height" constant="160" id="aCC-vA-qS0"/>
+                                            <constraint firstItem="qYh-gC-yaL" firstAttribute="centerX" secondItem="k6v-dp-aLy" secondAttribute="centerX" id="aay-FA-bru"/>
+                                            <constraint firstItem="Reh-7T-x4F" firstAttribute="top" secondItem="k6v-dp-aLy" secondAttribute="top" constant="8" id="wEM-lM-JSc"/>
+                                            <constraint firstItem="qYh-gC-yaL" firstAttribute="top" secondItem="Reh-7T-x4F" secondAttribute="bottom" constant="1" id="wtu-bM-69c"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who wants to play?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzv-M1-HCj">
+                                <rect key="frame" x="0.0" y="264" width="390" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="84x-Vx-nrY"/>
+                                    <constraint firstAttribute="width" constant="390" id="Fxz-7A-8xL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="45"/>
+                                <color key="textColor" red="0.74783831834793091" green="0.084713853895664215" blue="0.1505453884601593" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Iu-2M-1J8">
+                                <rect key="frame" x="120" y="540" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Shl-lR-0kQ"/>
+                                    <constraint firstAttribute="width" constant="150" id="qZp-yK-FXg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="42"/>
+                                <state key="normal" title="We're ready!">
+                                    <color key="titleColor" red="0.76309853792190552" green="0.080855049192905426" blue="0.11385019868612289" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goGameButton:" destination="vfb-OJ-bcj" eventType="touchUpInside" id="6so-n0-yZB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ytl-eR-kmm"/>
+                        <color key="backgroundColor" red="0.9452093243598938" green="0.89556819200515747" blue="0.76967322826385498" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LgP-8s-ax0" firstAttribute="centerY" secondItem="152-Ew-9AF" secondAttribute="centerY" id="3hg-r1-uhV"/>
+                            <constraint firstItem="Ytl-eR-kmm" firstAttribute="bottom" secondItem="8Iu-2M-1J8" secondAttribute="bottom" constant="220" id="7yP-Xh-XtH"/>
+                            <constraint firstItem="yzv-M1-HCj" firstAttribute="top" secondItem="Ytl-eR-kmm" secondAttribute="top" constant="220" id="HP0-TJ-tcN"/>
+                            <constraint firstItem="8Iu-2M-1J8" firstAttribute="centerX" secondItem="152-Ew-9AF" secondAttribute="centerX" id="QSb-jZ-o1w"/>
+                            <constraint firstItem="LgP-8s-ax0" firstAttribute="trailing" secondItem="Ytl-eR-kmm" secondAttribute="trailing" id="cyd-yR-bT1"/>
+                            <constraint firstItem="LgP-8s-ax0" firstAttribute="leading" secondItem="Ytl-eR-kmm" secondAttribute="leading" id="hxF-2H-KeZ"/>
+                            <constraint firstItem="yzv-M1-HCj" firstAttribute="centerX" secondItem="152-Ew-9AF" secondAttribute="centerX" id="rKP-fa-l14"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playButton" destination="8Iu-2M-1J8" id="VUb-jj-gE5"/>
+                        <outlet property="playerName1" destination="Reh-7T-x4F" id="MhD-Vb-n5b"/>
+                        <outlet property="playerName2" destination="syW-z9-S05" id="cr0-7i-4Zh"/>
+                        <outlet property="titleLabel" destination="yzv-M1-HCj" id="hyE-yV-dCU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CPQ-bV-f7H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-155.38461538461539" y="162.79620853080567"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="VS" width="1200" height="1200"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
